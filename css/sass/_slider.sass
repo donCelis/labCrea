@@ -1,0 +1,79 @@
+//-- Slider --
+.diapositivas
+	width: 100%
+	color: white
+	position: relative
+	background: $back-colorC
+
+.container
+	width: 100%
+	height: 100vh
+	margin: auto
+	overflow: hidden
+	position: relative
+	&::after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		background: rgba(52, 73, 94,0.4)
+		z-index: 1
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+
+.slide
+	display: flex
+	width: 100%
+	height: 100%
+	img
+		width: 100%
+		height: auto
+		object-fit: cover
+
+.content
+	position: absolute
+	z-index: 10
+	bottom: 0
+	width: 100%
+	cursor: default
+	background: var(--bgColor)
+	display: flex
+	flex-flow: row wrap
+	align-items: center
+	justify-content: space-between
+
+.arrows
+	button
+		background: var(--sColor)
+		font-size: 1.4em
+		color: white
+		padding: 8px 10px
+		display: inline-flex
+		clear: both
+		cursor: pointer
+		transition: var(--transition)
+		&:hover
+			background: var(--fColor)
+
+.corners
+	display: inline-flex
+	flex-flow: row wrap
+	align-items: center
+	margin-right: 10px
+
+.option
+	border-radius: 100%
+	height: 20px
+	width: 20px
+	margin: 5px
+	background: transparent
+	border: 2px solid var(--fColor)
+	cursor: pointer
+	transition: var(--transition)
+	&:hover
+		background: var(--fColor)
+
+.fill
+	background: var(--fColor)

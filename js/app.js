@@ -1,7 +1,7 @@
 let slide = document.querySelector('.slide'),
   images = document.querySelectorAll('.slide img'),
   arrows = document.querySelector('.arrows'),
-  options = document.querySelectorAll('.option')
+  options = document.querySelectorAll('.option'),
   counter = 1,
   opIndex = 0,
   size = images[counter-1].clientWidth

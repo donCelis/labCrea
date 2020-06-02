@@ -1,0 +1,54 @@
+//-- Responsive --
+@media screen and (max-width: 780px)
+	.menu
+		display: none
+
+	.menuMovil
+		display: flex
+		flex-direction: column
+		padding: 15px
+		cursor: pointer
+		li
+			width: 30px
+			height: 3px
+			background: white
+			margin: 3px 0
+
+	.galeria
+		width: 95%
+		li
+			flex-basis: 45%
+
+	.equipo
+		width: 90%
+		li
+			flex-basis: 42%
+		li:last-child
+			flex-basis: 60%
+			margin: 0 auto
+
+	.contenedorDatos
+		width: 90%
+
+@media screen and (max-width: 520px)
+	.galeria li
+		flex-basis: 100%
+
+	.equipo li
+		flex-basis: 100% !important
+
+	.contenedorDatos
+		justify-content: space-between
+
+	.datosEntrada
+		flex-basis: 100%
+
+	.datosSalida
+		flex-basis: 30%
+		padding: 0
+		margin: 20px 0
+
+	.redesSociales
+		flex-basis: 45%
+		margin: 20px 0
+		justify-content: center

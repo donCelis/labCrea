@@ -1,0 +1,87 @@
+//-- Pie de página y formulario
+footer
+	background: $back-colorC
+	color: white
+	width: 100%
+	text-align: center
+
+.contenedorDatos
+	padding: 30px 0
+	width: 75%
+	margin: 0 auto
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+
+.titulo, .contenedorDatos p
+	flex-basis: 100%
+
+.datosEntrada
+	flex-basis: 70%
+
+.datosSalida
+	flex-basis: 30%
+	text-align: left
+	padding-left: 30px
+
+.datosLabCrea
+	color: rgba($opacity, 0.5)
+
+#formularioPrincipal
+	display: flex
+	flex-flow: column wrap
+	input
+		margin: 2px 0
+		padding: 15px
+		background: $back-colorO
+		font-size: 0.8em
+		border-bottom: 2px solid transparent
+		transition: ease-in-out 0.2s
+		&:focus
+			border-bottom: 2px solid	$base-color
+			color: white
+	input[type="submit"]
+		background: rgb(97, 103, 115)
+		color: white
+		font-size: 0.8em
+		width: 150px
+		margin-top: 40px
+		cursor: pointer
+		transition: ease-in-out 0.2s
+		border: none
+		&:hover
+			background: $base-color
+	textarea
+		margin: 2px 0
+		padding: 15px
+		background: $back-colorO
+		font-size: 0.8em
+		height: 300px
+		border-bottom: 2px solid transparent
+		transition: ease-in-out 0.2s
+		&:focus
+			border-bottom: 2px solid	$base-color
+			color: white
+
+.redesSociales
+	margin: 15px 0
+	display: flex
+	flex-flow: row wrap
+	align-items: center
+	.icono
+		color: rgba($opacity, 0.5)
+		font-size: 2em
+		padding: 10px
+		background: $back-colorO
+		margin: 10px
+		transition: ease-in-out 0.2s
+		&:hover
+			background: $base-color
+			color: white
+
+.contenidoPie
+	background: $back-colorO
+	padding: 30px 0
+	font-size: 1.2em
+	p span
+		color: $base-color
