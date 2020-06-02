@@ -4,7 +4,7 @@ let slide = document.querySelector('.slide'),
   options = document.querySelectorAll('.option'),
   counter = 1,
   opIndex = 0,
-  size = images[counter-1].clientWidth
+  size = slide.clientWidth
 
 //Actualizar el estado de los puntos
 update()
