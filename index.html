@@ -9,54 +9,70 @@
     <title>Lab/Crea 2020</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      defer
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/app.min.js"></script>
   </head>
   <body>
     <!-- Slider -->
-    <section class="diapositivas">
+    <section class="diapositivas" id="inicio">
       <section class="container">
-        <div class="slide">
-          <img class="last" src="assets/img/photo5.jpg" alt="" />
-          <img src="assets/img/photo1.jpg" alt="" />
-          <img src="assets/img/photo2.jpg" alt="" />
-          <img src="assets/img/photo3.jpg" alt="" />
-          <img src="assets/img/photo4.jpg" alt="" />
-          <img src="assets/img/photo5.jpg" alt="" />
-          <img class="first" src="assets/img/photo1.jpg" alt="" />
-        </div>
-        <div class="content">
-          <div class="arrows">
-            <button class="prev fas fa-chevron-left"></button>
-            <button class="next fas fa-chevron-right"></button>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="assets/img/photo1.jpg" alt="Foto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/photo2.jpg" alt="Foto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/photo3.jpg" alt="Foto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/photo4.jpg" alt="Foto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/photo5.jpg" alt="Foto" />
+            </div>
           </div>
-          <ul class="corners">
-            <li data-index="0" class="option"></li>
-            <li data-index="1" class="option"></li>
-            <li data-index="2" class="option"></li>
-            <li data-index="3" class="option"></li>
-            <li data-index="4" class="option"></li>
-          </ul>
+          <section class="elements">
+            <div class="arrows">
+              <div class="swiper-prev fas fa-chevron-left"></div>
+              <div class="swiper-next fas fa-chevron-right"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <a href="#header" class="swiper-down fas fa-chevron-down"></a>
+          </section>
         </div>
       </section>
     </section>
     <!-- Inicio -->
-    <section class="inicio">
-      <header>
-        <h1 class="logo">lab/crea</h1>
-        <nav class="menu">
-          <a href="#">Inicio</a>
-          <a href="#">Portafolio</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Contacto</a>
-        </nav>
-        <ul class="menuMovil">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </header>
+    <header id="header">
+      <h1 class="logo">lab/crea</h1>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <ul class="menuMovil">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </header>
+    <section id="portafolio">
       <h2 class="titulo">Portafolio</h2>
       <p>Cuando surgen ideas creativas</p>
       <ul class="galeria">
@@ -71,7 +87,7 @@
         <li><img src="assets/img/photo4.jpg" alt="Foto" /></li>
       </ul>
     </section>
-    <section class="nosotros">
+    <section id="nosotros">
       <h2 class="titulo">Nosotros</h2>
       <p>
         Lo más importante para nosotros es trabajar con las personas que lo
@@ -134,7 +150,7 @@
         </li>
       </ul>
     </section>
-    <footer>
+    <footer id="contacto">
       <h2 class="titulo">Contacto</h2>
       <p>Envianos un mensaje y conversamos sobre tú idea.</p>
       <section class="contenedorDatos">
@@ -174,6 +190,5 @@
         <p>® 2020 © <span>LAB/CREA</span> Todos los derechos reservados.</p>
       </section>
     </footer>
-    <script src="js/app.min.js"></script>
   </body>
 </html>
