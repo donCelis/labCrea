@@ -3,10 +3,10 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   mousewheel: false,
-  autoplay: {
+  /* autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
+  }, */
   speed: 800,
   setWrapperSize: true,
   effect: "coverflow",
